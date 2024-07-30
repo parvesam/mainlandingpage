@@ -2727,3 +2727,53 @@ input, select, textarea {
 #projects article a:hover {
     opacity: 0.8;
 }
+
+#blog .container {
+    max-width: 600px; /* Adjust the width of the container */
+    margin: 0 auto;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+#blog article {
+    text-align: center;
+    padding: 1em 0;
+}
+
+#blog article h3 {
+    margin-top: 0;
+    font-size: 1.5em;
+}
+
+#blog .blog-image {
+    width: 100%;
+    max-width: 300px; /* Adjust the max width of the image */
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1em;
+}
+
+#blog article p {
+    margin: 1em 0;
+    font-size: 1em;
+    color: #333;
+}
+
+#blog .blog-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px 10px; /* Adjust margins for spacing */
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+#blog .blog-button:hover {
+    opacity: 0.8;
+}
