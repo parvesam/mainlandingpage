@@ -2668,3 +2668,62 @@ input, select, textarea {
     font-size: 0.8em;
     color: gray;
 }
+
+#projects h2 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+#projects .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+#projects article {
+    text-align: center;
+    padding: 1em;
+}
+
+#projects article h3 {
+    margin-top: 0;
+    font-size: 1.5em;
+}
+
+#projects article img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1em;
+}
+
+#projects article p {
+    margin: 1em 0;
+    font-size: 1em;
+    color: #333;
+}
+
+#projects article a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+#projects article a:nth-of-type(2) {
+    background-color: #28a745;
+}
+
+#projects article a:hover {
+    opacity: 0.8;
+}
