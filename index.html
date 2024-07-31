@@ -6,6 +6,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+		<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+		<script>
+			emailjs.init("7kn6xhA8WRZut_yFn"); // your EmailJS User ID
+		</script>
 	</head>
 	<body class="is-preload">
 
@@ -189,10 +193,28 @@
 			
 									</div>
 								</section>
-			
 						</div>
 
-
+						<script>
+							emailjs.init("7kn6xhA8WRZut_yFn"); // Replace with your EmailJS User ID
+					
+							document.getElementById('contact-form').addEventListener('submit', function(event) {
+								event.preventDefault(); // Prevent default form submission
+					
+								const form = event.target;
+								const formData = new FormData(form);
+					
+								emailjs.sendForm('service_66d0tyr', 'template_wpsgd2s', formData)
+									.then(function(response) {
+										alert('Message sent successfully!');
+										form.reset(); // Reset the form after successful submission
+									}, function(error) {
+										alert('Failed to send message. Please try again.');
+										console.error('EmailJS error:', error);
+									});
+							});
+						</script>
+					
 		<!-- Footer -->
 			<div id="footer">
 
