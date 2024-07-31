@@ -2641,34 +2641,6 @@ input, select, textarea {
 		margin-bottom: 5px; /* Adjust this value to control spacing between items */
 	}
 	
-/* Experience Section */
-.experience {
-    margin-bottom: 1em;
-}
-
-.experience-details {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.experience-details div {
-    text-align: left;
-}
-
-.experience-details h3 {
-    margin: 0;
-}
-
-.experience-details p {
-    margin: 0;
-}
-
-.experience-date {
-    font-size: 0.8em;
-    color: gray;
-}
-
 #projects h2 {
     text-align: center;
     margin-bottom: 1em;
@@ -2778,4 +2750,33 @@ input, select, textarea {
     opacity: 0.8;
 }
 
+#certifications .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+.certification {
+    margin-bottom: 1.5em;
+}
+
+.certification-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.certification h3 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.certification p {
+    margin: 0.5em 0;
+}
+
+.certification-date {
+    font-size: 0.9em;
+    color: gray;
+}
 
